@@ -1,0 +1,15 @@
+# Copy this file to terraform.tfvars (which is git-ignored) and fill it in.
+
+student_name = "rohan-krishna-bandla"
+created_date = "28-Sep-2026"
+
+# MongoDB on EC2:  "mongodb://<user>:<password>@<EC2_PUBLIC_IP>:27017/?authSource=admin"
+# MongoDB Atlas:   "mongodb+srv://<user>:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority"
+mongo_uri = "mongodb://USER:PASSWORD@EC2_PUBLIC_IP:27017/?authSource=admin"
+
+# Class AWS account: paste the shared role ARN from IAM -> Roles (quicklabs-...-lambda-exec).
+# Own AWS account: leave empty and Terraform creates the role.
+lambda_role_arn = ""
+
+# false = Tier 1 (public S3 website), true = Tier 3 (CloudFront + private S3)
+enable_cloudfront = false
