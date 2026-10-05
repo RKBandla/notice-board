@@ -63,7 +63,7 @@ export default function App() {
     <div className="page">
       <header className="header">
         <h1>📌 Notice Board</h1>
-        <p>Post announcements for everyone to see.Auto-deployed by GitHub Actions.</p>
+        <p>Post announcements for everyone to see. Auto-deployed by GitHub Actions.</p>
       </header>
 
       <form className="card form" onSubmit={createNotice}>
